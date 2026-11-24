@@ -178,7 +178,7 @@
       <span class="eyebrow">Fasa 1 · Alami (pengalaman konkrit)</span>
       <div class="guide">
         <span class="av" aria-hidden="true">🦇</span>
-        <p><b class="who">Kapten Koko si Kelawar Pintar</b><span id="g0">Selamat datang, detektif muda! Teroka 6 kad haiwan menggunakan kamera AR atau klik gambar kad. Perhatikan cara pembiakan dan petunjuk setiap haiwan!</span></p>
+        <p><b class="who">Kapten Fifi</b><span id="g0">Selamat datang, detektif muda! Teroka 6 kad haiwan menggunakan kamera AR atau klik gambar kad. Perhatikan cara pembiakan dan petunjuk setiap haiwan!</span></p>
       </div>
 
       <div class="mode2">
@@ -232,7 +232,7 @@
       <span class="eyebrow">Fasa 2 · Renung (pemerhatian reflektif)</span>
       <div class="guide">
         <span class="av" aria-hidden="true">🦇</span>
-        <p><b class="who">Kapten Koko si Kelawar Pintar</b><span id="g1">Mari renung semula pemerhatian kamu daripada kad haiwan tadi. Jawab 3 soalan "Apa yang berubah apabila…" di bawah.</span></p>
+        <p><b class="who">Kapten Fifi</b><span id="g1">Mari renung semula pemerhatian kamu daripada kad haiwan tadi. Jawab 3 soalan "Apa yang berubah apabila…" di bawah.</span></p>
       </div>
 
       <div class="card">
@@ -288,7 +288,7 @@
       <span class="eyebrow">Fasa 3 · Faham (konsep abstrak)</span>
       <div class="guide">
         <span class="av" aria-hidden="true">🦇</span>
-        <p><b class="who">Kapten Koko si Kelawar Pintar</b><span id="g2">Semua haiwan membiak untuk menghasilkan anak supaya spesiesnya tidak pupus. Mari namakan dua konsep utama berdasarkan kad yang telah kamu kumpul!</span></p>
+        <p><b class="who">Kapten Fifi</b><span id="g2">Semua haiwan membiak untuk menghasilkan anak supaya spesiesnya tidak pupus. Mari namakan dua konsep utama berdasarkan kad yang telah kamu kumpul!</span></p>
       </div>
 
       <div class="card">
@@ -334,7 +334,7 @@
       <span class="eyebrow">Fasa 4 · Cuba (uji kaji aktif)</span>
       <div class="guide">
         <span class="av" aria-hidden="true">🦇</span>
-        <p><b class="who">Kapten Koko si Kelawar Pintar</b><span id="g3">Sekarang kamu ialah detektif bertauliah! Gunakan ciri haiwan daripada kad tadi untuk <b>meramal</b> cara pembiakan haiwan baharu dalam 3 situasi di bawah, kemudian uji jawapan kamu.</span></p>
+        <p><b class="who">Kapten Fifi</b><span id="g3">Sekarang kamu ialah detektif bertauliah! Gunakan ciri haiwan daripada kad tadi untuk <b>meramal</b> cara pembiakan haiwan baharu dalam 3 situasi di bawah, kemudian uji jawapan kamu.</span></p>
       </div>
 
       <div class="fb info" id="cubaAdvice"></div>
@@ -462,7 +462,7 @@
         let msg = "";
         if (S.phase === 0) {
           const c = MIS.find(m => !S.mis[m.id]);
-          msg = c ? `Kapten Koko menunggu! Teruskan <b>${c.t}</b> dengan klik gambar kad atau imbas kad AR.` : "Semua misi selesai! Tekan butang <b>2 Renung</b> untuk ke fasa seterusnya.";
+          msg = c ? `Kapten Fifi menunggu! Teruskan <b>${c.t}</b> dengan klik gambar kad atau imbas kad AR.` : "Semua misi selesai! Tekan butang <b>2 Renung</b> untuk ke fasa seterusnya.";
         } else if (S.phase === 1) {
           msg = "Cuba lengkapkan ketiga-tiga soalan dan tulis atau cakap ayat rumusan kamu di bawah.";
         } else if (S.phase === 2) {
@@ -471,7 +471,7 @@
           msg = "Pilih ramalan cara pembiakan haiwan baharu dan tekan butang <b>Uji & Semak</b>.";
         }
         sd("peringatan", msg);
-        toast("Peringatan dari Kapten Koko!");
+        toast("Peringatan dari Kapten Fifi!");
       }, 5000);
     })();
 
